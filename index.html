@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Никита Гольцев · продюсер событий и трансляций</title>
+<meta name="description" content="Никита Гольцев, продюсер событий и трансляций из Москвы. Реализация бренд-зон, корпоративных турниров и эфиров: заказчик, смета, подрядчики, площадка, проведение.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Никита Гольцев · продюсер событий и трансляций">
+<meta property="og:description" content="Бренд-зоны, корпоративные турниры и эфиры: в каждом проекте указана моя должность и что именно делал я.">
+<meta property="og:url" content="https://ssolutionn.github.io/CVV/">
+<meta property="og:site_name" content="Никита Гольцев">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:image" content="https://ssolutionn.github.io/CVV/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Никита Гольцев, продюсер событий и трансляций, Москва">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://ssolutionn.github.io/CVV/">
+<meta name="theme-color" content="#F5F4EF">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%2317181A'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='26' fill='%23F5F4EF' text-anchor='middle'%3E%D0%9D%D0%93%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@600;700&family=Wix+Madefor+Text:wght@400;600&display=swap">
+<style>
+/* Producer's work log: paper, ink, thin rules, labels like in production documents. One quiet accent for links. */
+:root{
+  --paper:#F5F4EF; --sheet:#FBFAF7; --ink:#17181A; --muted:#55595F; --line:#D8D6CE; --rule:#17181A;
+  --link:#1E5E57;
+  --f-display:"Wix Madefor Display","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Wix Madefor Text","Helvetica Neue",Arial,sans-serif;
+  --gutter:clamp(16px,4vw,48px); --max:1180px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-padding-top:calc(var(--hh,64px) + 16px)}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-underline-offset:3px}
+a:hover{color:var(--ink)}
+:focus-visible{outline:2px solid var(--link);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--max);margin-inline:auto;padding-inline:var(--gutter)}
+h1,h2,h3{font-family:var(--f-display);margin:0;text-wrap:balance;letter-spacing:-.02em;font-weight:700}
+h2{font-size:clamp(28px,3.4vw,40px);line-height:1.1}
+h3{font-size:clamp(22px,2.2vw,28px);line-height:1.15}
+p{margin:0}
+ul{margin:0;padding:0}
+.label{font-size:13px;font-weight:600;letter-spacing:.02em;color:var(--muted)}
+.skip{position:absolute;left:-9999px;top:8px;background:var(--ink);color:var(--paper);padding:8px 12px;border-radius:4px;z-index:50}
+.skip:focus{left:8px}
+
+/* header */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--paper);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 24px;padding-block:12px}
+.brand{font-family:var(--f-display);font-weight:700;font-size:17px;color:var(--ink);text-decoration:none}
+.nav{display:flex;flex-wrap:wrap;gap:4px 20px}
+.nav a{font-size:15px;color:var(--muted);text-decoration:none;padding-block:6px}
+.nav a:hover{color:var(--ink);text-decoration:underline}
+@media (max-width:640px){.bar{position:static}.nav{gap:2px 16px}}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);padding-block:clamp(40px,7vw,88px) clamp(36px,5vw,64px);align-items:end}
+@media (max-width:860px){.hero{grid-template-columns:1fr}}
+.hero h1{font-size:clamp(44px,6.4vw,80px);line-height:1;letter-spacing:-.035em;margin-top:10px}
+.hero .lead{margin-top:22px;font-size:clamp(18px,1.7vw,21px);max-width:38ch}
+.hero .now{margin-top:16px;color:var(--muted);font-size:16px;max-width:44ch}
+.btn{display:inline-block;margin-top:28px;background:var(--ink);color:var(--paper);text-decoration:none;font-weight:600;padding:13px 20px;border-radius:6px}
+.btn:hover{background:var(--link);color:var(--paper)}
+.duty{border-top:2px solid var(--rule)}
+.duty p{padding-block:10px 6px}
+.duty dl{margin:0;display:grid;grid-template-columns:auto 1fr;font-size:15px}
+.duty dt,.duty dd{margin:0;padding:9px 0;border-top:1px solid var(--line)}
+.duty dt{font-weight:600;padding-right:18px}
+.duty dd{color:var(--muted)}
+
+/* sections */
+section{padding-block:clamp(48px,7vw,88px);border-top:1px solid var(--line)}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:12px 40px;align-items:end;margin-bottom:clamp(28px,4vw,44px)}
+.sec-head p{color:var(--muted);max-width:56ch}
+@media (max-width:760px){.sec-head{grid-template-columns:1fr}}
+
+/* case entries: metadata column + text, like a log entry */
+.entry{display:grid;grid-template-columns:220px minmax(0,1fr);gap:16px 40px;padding-block:28px;border-top:1px solid var(--line)}
+.entry:first-of-type{border-top:2px solid var(--rule)}
+@media (max-width:760px){.entry{grid-template-columns:1fr;gap:12px}}
+.entry .meta{margin:0;display:flex;flex-direction:column;gap:10px;font-size:14px}
+.entry .meta dt{font-size:12px;font-weight:600;color:var(--muted);letter-spacing:.02em}
+.entry .meta dd{margin:2px 0 0}
+@media (max-width:760px){.entry .meta{flex-direction:row;flex-wrap:wrap;gap:8px 24px}}
+.entry .body{display:flex;flex-direction:column;gap:14px;max-width:70ch}
+.entry .body p{color:var(--soft)}
+.entry h4{margin:6px 0 0;font-family:var(--f-display);font-size:16px;font-weight:700}
+.entry ul.tasks{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px}
+@media (max-width:600px){.entry ul.tasks{grid-template-columns:1fr}}
+.entry ul.tasks li{padding:7px 0;border-top:1px solid var(--line);font-size:15px}
+.entry.lg h3{font-size:clamp(26px,2.8vw,34px)}
+.entry .note{font-size:14px;color:var(--muted)}
+
+.compact{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 40px;margin-top:8px}
+@media (max-width:760px){.compact{grid-template-columns:1fr}}
+.compact article{padding-block:22px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:8px}
+.compact h3{font-size:21px}
+.compact .when{font-size:14px;color:var(--muted)}
+.compact p{font-size:16px;color:var(--soft)}
+
+.flow{list-style:none;display:flex;flex-wrap:wrap;gap:6px 0;font-size:15px}
+.flow li{padding-right:22px;position:relative}
+.flow li:not(:last-child)::after{content:"→";position:absolute;right:5px;color:var(--muted)}
+
+/* teams and academy */
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 56px}
+@media (max-width:860px){.two{grid-template-columns:1fr}}
+.two > div{display:flex;flex-direction:column;gap:14px;border-top:2px solid var(--rule);padding-top:18px}
+.two p{max-width:58ch;color:var(--soft)}
+.players{list-style:none;columns:2;column-gap:28px;font-size:15px}
+@media (max-width:480px){.players{columns:1}}
+.players li{break-inside:avoid;padding:6px 0;border-top:1px solid var(--line)}
+.players a{font-weight:600}
+.players .pn{display:block;font-size:13px;color:var(--muted)}
+.small{font-size:14px;color:var(--muted)}
+
+/* archive */
+details.all > summary{cursor:pointer;list-style:none;display:inline-flex;margin-bottom:18px}
+details.all > summary::-webkit-details-marker{display:none}
+.toggle{font-size:15px;font-weight:600;border:1px solid var(--ink);border-radius:6px;padding:8px 14px;flex:none}
+details.all[open] .toggle .o, details.all:not([open]) .toggle .c{display:none}
+.archive-intro{color:var(--muted);max-width:64ch;margin:14px 0 18px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:flex-end;margin-bottom:12px}
+.chip{font:inherit;font-size:14px;padding:9px 12px;border-radius:4px;border:1px solid var(--line);background:var(--sheet);color:var(--ink);cursor:pointer;min-height:40px}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.chip .cnt{opacity:.7;font-size:13px}
+.search{display:flex;flex-direction:column;gap:4px;margin-left:auto;flex:0 1 280px;min-width:0}
+.search label{font-size:13px;font-weight:600}
+.search input{font:inherit;font-size:15px;padding:9px 12px;border-radius:4px;border:1px solid var(--field);background:var(--sheet);color:var(--ink);min-width:0;min-height:40px}
+@media (max-width:640px){.search{margin-left:0;flex:1 1 100%}}
+.found{font-size:14px;color:var(--muted);margin-bottom:6px}
+#rows{list-style:none}
+.row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr) minmax(0,1.5fr) 132px;gap:16px;padding:13px 0;border-top:1px solid var(--line);align-items:baseline}
+.row .n{font-weight:600}
+.row .rn{display:flex;flex-direction:column}
+.row .w,.row .c{font-size:14px;color:var(--muted)}
+.row .r{font-size:15px;display:flex;flex-direction:column;gap:1px}
+.row .r .t{font-weight:600}
+.row .r .en,.row .r .rd{font-size:13px;color:var(--muted)}
+.row .d{font-size:15px;color:var(--soft)}
+@media (max-width:860px){.row{grid-template-columns:1fr;gap:3px}}
+
+/* contact */
+.contact{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:28px 56px}
+@media (max-width:860px){.contact{grid-template-columns:1fr}}
+.contact p{max-width:48ch;color:var(--soft)}
+.contact p + p{margin-top:12px}
+.links{list-style:none;border-top:2px solid var(--rule)}
+.links li{padding:14px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;align-items:baseline}
+.links a{font-family:var(--f-display);font-size:clamp(19px,2vw,23px);font-weight:700;overflow-wrap:anywhere}
+footer{padding-block:28px 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+/* positions: job-market titles and scope of each role */
+:root{--soft:#2B2E33;--field:#A9A79F}
+.scope{display:inline-block;font-size:12px;font-weight:600;line-height:1.5;padding:1px 8px;border-radius:999px;border:1px solid var(--ink);color:var(--ink);white-space:nowrap}
+.scope.s3{background:var(--ink);color:var(--paper)}
+.scope.s1{border-color:var(--field);color:var(--muted)}
+.en{color:var(--muted);font-size:13px}
+.entry .meta .pos dd{display:flex;flex-direction:column;align-items:flex-start;gap:3px}
+.entry .meta .pos b{font-family:var(--f-display);font-size:16px}
+.pos-line{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 10px;font-size:14px}
+.pos-line b{font-family:var(--f-display);font-size:15px}
+.scopes{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 32px;border-top:2px solid var(--rule);padding-top:16px;margin-bottom:36px}
+@media (max-width:760px){.scopes{grid-template-columns:1fr}}
+.scopes li{display:flex;flex-direction:column;align-items:flex-start;gap:6px;font-size:15px;color:var(--soft)}
+.fams{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:28px 40px}
+.fam h3{font-size:19px;margin-bottom:6px}
+.fam ul{list-style:none}
+.role{all:unset;box-sizing:border-box;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 12px;width:100%;padding:10px 0;border-top:1px solid var(--line)}
+.role:hover .rt{text-decoration:underline}
+.role:focus-visible{outline:2px solid var(--link);outline-offset:3px;border-radius:2px}
+.role .rt{font-weight:600}
+.role .rc{font-variant-numeric:tabular-nums;color:var(--muted);font-size:14px}
+.role .en,.role .rx{grid-column:1 / -1}
+.role .rx{font-size:14px;color:var(--muted)}
+.scopes .pick{all:unset;cursor:pointer;color:var(--link);font-size:14px;text-decoration:underline;text-underline-offset:3px}
+.scopes .pick:focus-visible{outline:2px solid var(--link);outline-offset:3px}
+.picked{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:14px;margin-bottom:8px}
+.picked button{font:inherit;font-size:14px;padding:6px 10px;border-radius:4px;border:1px solid var(--ink);background:var(--sheet);color:var(--ink);cursor:pointer}
+
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Никита Гольцев","jobTitle":"Продюсер событий и трансляций","url":"https://ssolutionn.github.io/CVV/","telephone":"+7 905 705-76-67","address":{"@type":"PostalAddress","addressLocality":"Москва","addressCountry":"RU"},"worksFor":{"@type":"Organization","name":"Киберспортивный центр РТУ МИРЭА"},"knowsAbout":["организация мероприятий","бренд-зоны","продюсирование трансляций","организация киберспортивных турниров"],"sameAs":["https://t.me/solution_n"]}</script>
+</head>
+<body>
+<a class="skip" href="#main">К содержанию</a>
+<header class="bar" id="bar">
+  <div class="wrap">
+    <a class="brand" href="#top">Никита Гольцев</a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#cases">Проекты</a>
+      <a href="#roles">Должности</a>
+      <a href="#teams">Команды</a>
+      <a href="#all">Все проекты</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap hero" id="top">
+    <div>
+      <p class="label">Продюсер событий и трансляций · Москва</p>
+      <h1>Никита Гольцев</h1>
+      <p class="lead">Веду реализацию мероприятий: от разговора с заказчиком и сметы до команды, подрядчиков, монтажа и проведения. Большая часть опыта в киберспорте, эфирах и корпоративных турнирах, но задачи на площадке те же, что на любом ивенте.</p>
+      <p class="now">Работаю в штате Киберспортивного центра РТУ МИРЭА. Отдельные проекты веду через своё ИП.</p>
+      <a class="btn" href="#contact">Давайте работать вместе</a>
+    </div>
+    <div class="duty">
+      <p class="label">Что обычно на мне</p>
+      <dl>
+        <dt>Заказчик</dt><dd>задача, согласования, связь во время проекта</dd>
+        <dt>Смета</dt><dd>состав работ, оборудование, люди</dd>
+        <dt>Команда</dt><dd>админы, судьи, эфирная команда под проект</dd>
+        <dt>Подрядчики</dt><dd>печать, конструкции, техника, доставка</dd>
+        <dt>Площадка</dt><dd>застройка, монтаж, демонтаж</dd>
+        <dt>Проведение</dt><dd>турнир, зона с гостями, эфир</dd>
+      </dl>
+    </div>
+  </div>
+
+  <section id="cases"><div class="wrap">
+    <div class="sec-head">
+      <h2>Проекты</h2>
+      <p>Сначала проекты, где на мне была реализация целиком или большая её часть. В каждом указано, что делал я, а что делали другие.</p>
+    </div>
+
+    <article class="entry lg">
+      <dl class="meta">
+        <div class="pos"><dt>Должность</dt><dd><b>Менеджер проекта мероприятия</b><span class="en">Event Project Manager</span><span class="scope s3">вёл реализацию</span></dd></div>
+        <div><dt>Когда</dt><dd>сентябрь 2026, второй год подряд</dd></div>
+        <div><dt>Где</dt><dd>санаторий Минэкономразвития, Вороново</dd></div>
+        <div><dt>Формат</dt><dd>корпоративный турнир по CS, 6 команд 3×3</dd></div>
+      </dl>
+      <div class="body">
+        <h3>Корпоративный турнир Минэкономразвития</h3>
+        <p>Я подключился, когда идея турнира уже была, и вёл реализацию: договаривался с подрядчиками, следил за застройкой, организовывал трансляцию, собирал людей на проведение и сам проводил турнир.</p>
+        <h4>Что было на мне</h4>
+        <ul class="tasks"><li>подрядчики</li><li>застройка площадки</li><li>трансляция</li><li>команда проведения</li><li>проведение турнира</li></ul>
+      </div>
+    </article>
+
+    <article class="entry lg">
+      <dl class="meta">
+        <div class="pos"><dt>Должность</dt><dd><b>Менеджер проекта мероприятия</b><span class="en">Event Project Manager</span><span class="scope s3">вёл реализацию</span></dd></div>
+        <div><dt>Когда</dt><dd>август 2025</dd></div>
+        <div><dt>Формат</dt><dd>игровая бренд-зона на вечеринке</dd></div>
+        <div><dt>Моя роль</dt><dd>реализация зоны</dd></div>
+      </dl>
+      <div class="body">
+        <h3>ggsel × Jolly</h3>
+        <p>С менеджером спецпроектов ggsel вместе осмотрели площадку и обсудили концепцию. Реализация после этого была на мне: смета, оборудование, декор, печать, персонал, логистика и подрядчики, потом монтаж, работа зоны и демонтаж.</p>
+        <p>В зоне стояли четыре PlayStation 5, две ретро-консоли и автомат Pac-Man, шесть телевизоров, LED-свет и зеркальные шары. Работали пять администраторов и старший.</p>
+      </div>
+    </article>
+
+    <article class="entry">
+      <dl class="meta">
+        <div class="pos"><dt>Должность</dt><dd><b>Продюсер трансляции</b><span class="en">Broadcast Producer</span><span class="scope s3">вёл реализацию</span></dd></div>
+        <div><dt>Где</dt><dd>РТУ МИРЭА</dd></div>
+        <div><dt>Формат</dt><dd>трансляция соревнований</dd></div>
+        <div><dt>Моя роль</dt><dd>формат эфира и продюсирование</dd></div>
+      </dl>
+      <div class="body">
+        <h3>Кубок технологических видов спорта</h3>
+        <p>Задача была одна: нужна трансляция. Соревнования шли в разных точках университета, и я предложил собрать их в общий эфир по логике выпуска новостей: студия ведёт программу, мобильные группы дают включения с площадок. Этот эфир я и продюсировал.</p>
+        <ul class="flow" aria-label="Как шёл сигнал"><li>две мобильные группы на площадках</li><li>мобильный интернет</li><li>закрытый сервер студии</li><li>общий эфир около 8 часов</li></ul>
+      </div>
+    </article>
+
+    <article class="entry">
+      <dl class="meta">
+        <div class="pos"><dt>Должность</dt><dd><b>Менеджер бренд-активации</b><span class="en">Brand Activation Manager</span><span class="scope s2">отвечал за часть</span></dd></div>
+        <div><dt>Когда</dt><dd>август 2025</dd></div>
+        <div><dt>Где</dt><dd>IT Пикник</dd></div>
+        <div><dt>Моя роль</dt><dd>бренд-зона Купикода</dd></div>
+      </dl>
+      <div class="body">
+        <h3>IT Пикник × Купикод</h3>
+        <p>В зоне была CS2 на 10 компьютерах. На площадке я поменял механику: раунд около десяти минут, одновременно играют десять человек, потом приз и следующая десятка.</p>
+        <p>Между раундами сам звал прохожих. Один мужчина привёл детей и сказал, что сам уже старый. Мы разговорились про CS 1.6, и я предложил ему тоже сесть на десять минут.</p>
+      </div>
+    </article>
+
+    <div class="compact">
+      <article>
+        <p class="when">май, РТУ МИРЭА</p>
+        <h3>LDPR eSports, офлайн</h3>
+        <p class="pos-line"><b>Координатор площадки (принимающая сторона)</b><span class="en">Venue Coordinator (host side)</span><span class="scope s2">отвечал за часть</span></p>
+        <p>Был на переговорах о площадке с руководителем молодёжного крыла ЛДПР и ректором РТУ МИРЭА. Потом со стороны университета вёл застройку площадки сразу для двух сторон: OneShot и ЛДПР.</p>
+      </article>
+      <article>
+        <p class="when">сентябрь-октябрь 2024</p>
+        <h3>Headshot Heroes</h3>
+        <p class="pos-line"><b>Координатор проекта</b><span class="en">Project Coordinator</span><span class="scope s2">отвечал за часть</span></p>
+        <p>Собирал игроков и координировал проект, немного работал с дизайнером. На площадке общался с заказчиком и решал вопросы по ходу.</p>
+      </article>
+      <article>
+        <p class="when">2026, один месяц</p>
+        <h3>WINLINE × Шереметьево</h3>
+        <p class="pos-line"><b>Продюсер вещания</b><span class="en">Programming Producer</span><span class="scope s2">отвечал за часть</span></p>
+        <p>Месяц показа футбола в аэропорту: прямые матчи и повторы, на рекламных паузах ролики WINLINE. Я придумал логику показа и составил расписание. Нашёл продюсера смен, дальше он набирал режиссёров и вёл смены и оплаты.</p>
+      </article>
+      <article>
+        <p class="when">август 2026, стадион «Авангард»</p>
+        <h3>Зона ФСП на семейном фестивале ПСБ</h3>
+        <p class="pos-line"><b>Менеджер бренд-активации</b><span class="en">Brand Activation Manager</span><span class="scope s2">отвечал за часть</span></p>
+        <p>Шатёр и часть техники предоставил организатор фестиваля. На мне были активности Федерации спортивного программирования: робот-собака и небольшой дрон. Я привёл трёх человек, они учили гостей программировать и управлять техникой, а сам работал с посетителями и звал подписаться на каналы ФСП.</p>
+      </article>
+      <article>
+        <p class="when">пять сезонов</p>
+        <h3>КиберЛига «Трудовые Резервы»</h3>
+        <p class="pos-line"><b>Комментатор, судья, затем продюсер</b><span class="en">Caster, Referee, then Producer</span><span class="scope s2">отвечал за часть</span></p>
+        <p>Был в лиге все пять сезонов, роли менялись: комментарий, судейство, продюсирование. В четвёртом сезоне играли 116 команд, в пятом 100. У лиги пять LAN-финалов.</p>
+      </article>
+      <article>
+        <p class="when">2025</p>
+        <h3>Корпоративные турниры Газпромбанка</h3>
+        <p class="pos-line"><b>Организатор турнира + главный судья</b><span class="en">Tournament Manager / Head Referee</span><span class="scope s3">вёл реализацию</span></p>
+        <p>Два турнира для сотрудников банка. По регламенту одного из них: онлайн-формат, CS2, Dota 2, Hearthstone Battlegrounds и EA SPORTS FC 25, главный судья я.</p>
+      </article>
+    </div>
+  </div></section>
+
+  <section id="roles"><div class="wrap">
+    <div class="sec-head">
+      <h2>Должности</h2>
+      <p>Так мои роли называются в вакансиях. У каждого проекта на сайте указана должность и масштаб роли. Цифра справа: в скольких строках полного списка встречается должность. Нажмите на неё, чтобы увидеть эти проекты.</p>
+    </div>
+    <ul class="scopes">
+      <li><span class="scope s3">вёл реализацию</span><span>Проект на мне целиком или почти целиком: подрядчики, команда, проведение.</span><button type="button" class="pick" data-s="3">Показать <span data-scount="3"></span></button></li>
+      <li><span class="scope s2">отвечал за часть</span><span>Внутри чужого мероприятия на мне было направление: эфир, зона, дисциплина, судейство.</span><button type="button" class="pick" data-s="2">Показать <span data-scount="2"></span></button></li>
+      <li><span class="scope s1">отдельная задача</span><span>Закрывал конкретную функцию в команде: вебки, VJ, судья матчей, комментарий.</span><button type="button" class="pick" data-s="1">Показать <span data-scount="1"></span></button></li>
+    </ul>
+    <div class="fams"><div class="fam"><h3>Мероприятия и бренд-зоны</h3><ul><li><button type="button" class="role" data-pos="pm"><span class="rt">Менеджер проекта мероприятия</span><span class="rc" data-count="pm"></span><span class="en">Event Project Manager</span><span class="rx">Ведёт реализацию целиком: смета, подрядчики, площадка, команда, проведение.</span></button></li><li><button type="button" class="role" data-pos="coord"><span class="rt">Координатор проекта</span><span class="rc" data-count="coord"></span><span class="en">Project Coordinator</span><span class="rx">Связывает участников, заказчика и подрядчиков и следит, чтобы всё шло по плану.</span></button></li><li><button type="button" class="role" data-pos="act"><span class="rt">Менеджер бренд-активации</span><span class="rc" data-count="act"></span><span class="en">Brand Activation Manager</span><span class="rx">Отвечает за зону или стенд бренда на мероприятии: механика, оборудование, работа с гостями.</span></button></li><li><button type="button" class="role" data-pos="prod"><span class="rt">Координатор производства</span><span class="rc" data-count="prod"></span><span class="en">Production Coordinator</span><span class="rx">Связывает заказчика, дизайнера и подрядчиков, следит, чтобы печать и изделия сделали правильно и в срок.</span></button></li><li><button type="button" class="role" data-pos="venue"><span class="rt">Координатор площадки</span><span class="rc" data-count="venue"></span><span class="en">Venue Coordinator</span><span class="rx">Отвечает за площадку: застройка, монтаж, рассадка, решение проблем на месте.</span></button></li><li><button type="button" class="role" data-pos="stage"><span class="rt">Координатор сцены</span><span class="rc" data-count="stage"></span><span class="en">Stage Manager</span><span class="rx">Во время шоу держит сцену: кто выходит, когда стартует матч, все ли на местах.</span></button></li><li><button type="button" class="role" data-pos="guest"><span class="rt">Координатор работы с гостями</span><span class="rc" data-count="guest"></span><span class="en">Guest Experience Coordinator</span><span class="rx">Регистрация гостей, призовые механики, выдача призов.</span></button></li></ul></div><div class="fam"><h3>Трансляции</h3><ul><li><button type="button" class="role" data-pos="bp"><span class="rt">Продюсер трансляции</span><span class="rc" data-count="bp"></span><span class="en">Broadcast Producer</span><span class="rx">Отвечает за эфир целиком: формат, команда, техника, тайминг.</span></button></li><li><button type="button" class="role" data-pos="dir"><span class="rt">Режиссёр эфира</span><span class="rc" data-count="dir"></span><span class="en">Live Director</span><span class="rx">Во время эфира выбирает камеры и планы и командует эфирной командой.</span></button></li><li><button type="button" class="role" data-pos="tech"><span class="rt">Технический специалист эфира</span><span class="rc" data-count="tech"></span><span class="en">Broadcast Technician</span><span class="rx">Техника трансляции: сигнал, камеры, вебки, звук, серверы.</span></button></li><li><button type="button" class="role" data-pos="asst"><span class="rt">Ассистент продюсера</span><span class="rc" data-count="asst"></span><span class="en">Production Assistant</span><span class="rx">Помогает продакшену: подготовка, мониторинг, справки, задачи в моменте.</span></button></li></ul></div><div class="fam"><h3>Турниры</h3><ul><li><button type="button" class="role" data-pos="tm"><span class="rt">Менеджер турнира</span><span class="rc" data-count="tm"></span><span class="en">Tournament Manager</span><span class="rx">Организует турнир: регламент, сетка, участники, проведение.</span></button></li><li><button type="button" class="role" data-pos="disc"><span class="rt">Менеджер дисциплины</span><span class="rc" data-count="disc"></span><span class="en">Discipline Manager</span><span class="rx">Отвечает за одну игру или часть программы внутри большого события.</span></button></li><li><button type="button" class="role" data-pos="ref"><span class="rt">Судья</span><span class="rc" data-count="ref"></span><span class="en">Referee</span><span class="rx">Следит за правилами, решает спорные ситуации, ведёт протоколы. Главный судья отвечает за всё судейство турнира.</span></button></li><li><button type="button" class="role" data-pos="admin"><span class="rt">Администратор турнира</span><span class="rc" data-count="admin"></span><span class="en">Tournament Admin</span><span class="rx">Лобби, игровые серверы, рассадка, запуск матчей.</span></button></li></ul></div><div class="fam"><h3>Команды и игроки</h3><ul><li><button type="button" class="role" data-pos="team"><span class="rt">Менеджер команды</span><span class="rc" data-count="team"></span><span class="en">Team Manager</span><span class="rx">Работа с составом: тренировки, логистика, связь с организаторами.</span></button></li><li><button type="button" class="role" data-pos="coach"><span class="rt">Тренер</span><span class="rc" data-count="coach"></span><span class="en">Coach</span><span class="rx">Тренирует игроков и собирает составы.</span></button></li><li><button type="button" class="role" data-pos="talent"><span class="rt">Координатор талантов</span><span class="rc" data-count="talent"></span><span class="en">Talent Coordinator</span><span class="rx">Связывает организаторов со стримерами и гостями эфира: тайминги, задачи, порядок выхода.</span></button></li></ul></div><div class="fam"><h3>В кадре и контент</h3><ul><li><button type="button" class="role" data-pos="cast"><span class="rt">Комментатор, ведущий</span><span class="rc" data-count="cast"></span><span class="en">Caster / Host</span><span class="rx">Комментирует матчи или ведёт программу в кадре и на сцене.</span></button></li><li><button type="button" class="role" data-pos="vj"><span class="rt">VJ</span><span class="rc" data-count="vj"></span><span class="en">Visual Jockey</span><span class="rx">Управляет графикой и видео на экранах в кадре.</span></button></li><li><button type="button" class="role" data-pos="content"><span class="rt">Контент и интервью</span><span class="rc" data-count="content"></span><span class="en">Content Editor / Interviewer</span><span class="rx">Клипы, фото, интервью и материалы для соцсетей.</span></button></li></ul></div></div>
+  </div></section>
+
+  <section id="teams"><div class="wrap">
+    <div class="sec-head">
+      <h2>Команды и академия</h2>
+      <p>Работа с игроками помогает на турнирах: я знаю, что нужно командам на площадке и как с ними договариваться.</p>
+    </div>
+    <div class="two">
+      <div>
+        <h3>Менеджмент команд</h3>
+        <p class="pos-line"><b>Менеджер команды</b><span class="en">Team Manager</span></p>
+        <p>Был менеджером команды в организации и менеджером второй сборной РТУ МИРЭА по CS. У сборной два вторых места в Московской студенческой киберспортивной лиге и победа на чемпионате Москвы.</p>
+        <p>В декабре 2025 был в штабе состава Travoman по Dota 2 на Играх будущего в Абу-Даби, около десяти дней с командой.</p>
+      </div>
+      <div>
+        <h3>Академия и скаутинг</h3>
+        <p class="pos-line"><b>Тренер, менеджер академических составов, скаут</b><span class="en">Coach / Academy Manager / Scout</span></p>
+        <p>В 2023-2024 занимался с детьми по Counter-Strike в Академии XP, собирал и вёл академические составы, работал с тренерами и менеджерами, искал игроков.</p>
+        <p class="label">Игроки, которых я нашёл или развивал в академии (10)</p>
+        <ul class="players"><li><a href="https://www.hltv.org/player/25966/kinyx" target="_blank" rel="noopener">kinyx</a></li><li><a href="https://www.hltv.org/player/23637/b1st" target="_blank" rel="noopener">b1st</a></li><li><a href="https://www.hltv.org/player/24568/flouzer" target="_blank" rel="noopener">flouzer</a></li><li><a href="https://www.hltv.org/player/24967/rikon" target="_blank" rel="noopener">rikon</a> <span class="pn">мой вклад в поиск примерно половина</span></li><li><a href="https://www.hltv.org/player/26299/k0gass" target="_blank" rel="noopener">k0gass</a></li><li><a href="https://www.hltv.org/player/24951/triborgg1" target="_blank" rel="noopener">TriBorgg1</a> <span class="pn">пришёл через мои знакомства</span></li><li><a href="https://www.hltv.org/player/25494/sphinx" target="_blank" rel="noopener">sphinx</a></li><li><a href="https://www.hltv.org/player/25078/ban4ik007" target="_blank" rel="noopener">ban4ik007</a></li><li><a href="https://www.hltv.org/player/26540/saizius" target="_blank" rel="noopener">saizius</a></li><li><a href="https://www.hltv.org/player/24726/z3nder" target="_blank" rel="noopener">z3ndeR</a></li></ul>
+        <p class="label">Ещё работал с</p>
+        <ul class="players"><li><a href="https://www.hltv.org/player/22884/gr1ks" target="_blank" rel="noopener">gr1ks</a> <span class="pn">работали вместе, нашёл его не я</span></li><li><a href="https://www.hltv.org/player/24607/swetsi" target="_blank" rel="noopener">swetsi</a> <span class="pn">был в академии, мой вклад в поиск примерно половина</span></li><li><a href="https://www.hltv.org/player/24176/mokuj1n" target="_blank" rel="noopener">mokuj1n</a> <span class="pn">был у нас в аренде</span></li></ul>
+        <p class="small">Ссылки ведут на профили HLTV.</p>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="all"><div class="wrap">
+    <h2>Все проекты и роли</h2>
+    <p class="archive-intro">Здесь и большие проекты, и работа, где я закрывал отдельную функцию: судейство, вебки, кадр. Одна строка может объединять несколько событий, поэтому число строк не равно числу мероприятий. Где дата не указана, я её уточняю.</p>
+    <details class="all" id="all-details">
+      <summary><span class="toggle"><span class="o">Показать список (<span id="total"></span>)</span><span class="c">Свернуть</span></span></summary>
+      <div class="filters"><button type="button" class="chip" data-k="all" aria-pressed="true">Все <span class="cnt"></span></button><button type="button" class="chip" data-k="brand" aria-pressed="false">Бренд-зоны и производство <span class="cnt"></span></button><button type="button" class="chip" data-k="broadcast" aria-pressed="false">Трансляции <span class="cnt"></span></button><button type="button" class="chip" data-k="esports" aria-pressed="false">Турниры и LAN <span class="cnt"></span></button><button type="button" class="chip" data-k="onsite" aria-pressed="false">Работа на площадке <span class="cnt"></span></button><button type="button" class="chip" data-k="media" aria-pressed="false">Комментарий и контент <span class="cnt"></span></button><div class="search"><label for="q">Поиск по списку</label><input id="q" type="search" placeholder="бренд, роль, город" autocomplete="off"></div></div>
+      <p class="picked" id="picked" hidden><span id="picked-t"></span><button type="button" id="picked-x">Сбросить</button></p>
+      <p class="found" id="found" aria-live="polite"></p>
+      <ul id="rows">
+<li class="row" data-id="A01" data-k="brand" data-pos="act" data-s="2"><div class="rn"><span class="n">IT Пикник × Купикод</span><span class="w">август 2025</span></div><div class="r"><span class="t">Менеджер бренд-активации</span><span class="en">Brand Activation Manager</span><span class="rd">Бренд-зона Купикода</span></div><span class="d">CS2-зона на 10 ПК. На площадке перешёл на раунды по 10 минут: десять человек играют, приз, следующая десятка. Сам звал прохожих сыграть</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="A02" data-k="brand" data-pos="act" data-s="3"><div class="rn"><span class="n">Купикод × MLBB</span><span class="w">сентябрь 2025</span></div><div class="r"><span class="t">Менеджер бренд-активации</span><span class="en">Brand Activation Manager</span><span class="rd">Стенд и механика</span></div><span class="d">Механика «игра с админом на удвоение приза». Два больших баннера ставил подрядчик, я привёз и поставил бочки, свет, телевизор и ноутбук. 253 регистрации</span><span class="c"><span class="scope s3">вёл реализацию</span></span></li>
+<li class="row" data-id="A03" data-k="brand" data-pos="pm" data-s="3"><div class="rn"><span class="n">ggsel × Jolly</span><span class="w">август 2025</span></div><div class="r"><span class="t">Менеджер проекта мероприятия</span><span class="en">Event Project Manager</span><span class="rd">Реализация зоны</span></div><span class="d">Концепцию обсудили вместе с менеджером спецпроектов ggsel. Дальше на мне смета, оборудование, декор, печать, персонал, логистика, подрядчики, монтаж и демонтаж</span><span class="c"><span class="scope s3">вёл реализацию</span></span></li>
+<li class="row" data-id="A04" data-k="brand" data-pos="act" data-s="2"><div class="rn"><span class="n">Зона ФСП на семейном фестивале ПСБ</span><span class="w">август 2026, «Авангард»</span></div><div class="r"><span class="t">Менеджер бренд-активации</span><span class="en">Brand Activation Manager</span><span class="rd">Активности зоны ФСП</span></div><span class="d">Шатёр и часть техники от организатора фестиваля. На мне робот-собака, дрон, трое помощников для обучения гостей и работа с посетителями</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="A05" data-k="brand" data-pos="prod" data-s="2"><div class="rn"><span class="n">FunPay 67 Cup</span><span class="w">июль 2026</span></div><div class="r"><span class="t">Координатор производства</span><span class="en">Production Coordinator</span><span class="rd">Визуальное оформление</span></div><span class="d">Баннеры, носители, ТВ с QR-кодами; связь дизайна, производства и подрядчиков</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="A06" data-k="brand" data-pos="prod" data-s="3"><div class="rn"><span class="n">ggsel Gift Boxes</span><span class="w">сентябрь 2026</span></div><div class="r"><span class="t">Координатор производства</span><span class="en">Production Coordinator</span><span class="rd">Координация производства</span></div><span class="d">Связь заказчика и типографии, требования к изготовлению, правки</span><span class="c"><span class="scope s3">вёл реализацию</span></span></li>
+<li class="row" data-id="A07" data-k="brand" data-pos="act" data-s="2"><div class="rn"><span class="n">ФСП · стенд в ЦСКА</span><span class="w">декабрь 2025</span></div><div class="r"><span class="t">Менеджер стенда</span><span class="en">Exhibition Stand Manager</span><span class="rd">Оформление и реализация</span></div><span class="d">Стенд Федерации спортивного программирования</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="A08" data-k="brand" data-pos="act" data-s="2"><div class="rn"><span class="n">ФСП · РобоСити в МГИМО</span></div><div class="r"><span class="t">Менеджер стенда</span><span class="en">Exhibition Stand Manager</span><span class="rd">Стенд</span></div><span class="d">Стенд Федерации спортивного программирования</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="A09" data-k="brand" data-pos="act" data-s="2"><div class="rn"><span class="n">Мероприятие VK · игровая зона</span></div><div class="r"><span class="t">Менеджер игровой зоны</span><span class="en">Gaming Zone Manager</span><span class="rd">Продакшен зоны</span></div><span class="d">Зона PlayStation с экраном около 100 дюймов</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="A10" data-k="brand" data-pos="venue act" data-s="2"><div class="rn"><span class="n">ДЕПО × MLBB</span></div><div class="r"><span class="t">Координатор монтажа и активностей</span><span class="en">Venue & Activation Coordinator</span><span class="rd">Активности и монтаж</span></div><span class="d">Сходка и активности. Ночной монтаж крупных баннеров, оформление сцены</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="A11" data-k="onsite" data-pos="guest" data-s="1"><div class="rn"><span class="n">WINLINE PUBSTOMP</span><span class="w">2026</span></div><div class="r"><span class="t">Координатор работы с гостями</span><span class="en">Guest Experience Coordinator</span><span class="rd">Работа с гостями</span></div><span class="d">Регистрация гостей в призовую механику, выдача призов вместе с командой WINLINE; смена с 4 утра до 5 вечера</span><span class="c"><span class="scope s1">отдельная задача</span></span></li>
+<li class="row" data-id="A12" data-k="onsite" data-pos="venue" data-s="1"><div class="rn"><span class="n">Москва 2030</span><span class="w">2025</span></div><div class="r"><span class="t">Координатор площадки</span><span class="en">Venue Coordinator</span><span class="rd">Организация на площадке</span></div><span class="d">Позвали обсервером на Counter-Strike. Я привёз знакомого обсервера, картинку делал он. Я помогал на месте и в сильный ливень спас оборудование</span><span class="c"><span class="scope s1">отдельная задача</span></span></li>
+<li class="row" data-id="B01" data-k="broadcast" data-pos="bp" data-s="3"><div class="rn"><span class="n">Кубок технологических видов спорта</span><span class="w">РТУ МИРЭА</span></div><div class="r"><span class="t">Продюсер трансляции</span><span class="en">Broadcast Producer</span><span class="rd">Формат и продюсирование эфира</span></div><span class="d">Общий эфир в логике выпуска новостей, две мобильные группы, около 8 часов. Сигнал через мобильный интернет на закрытый сервер студии</span><span class="c"><span class="scope s3">вёл реализацию</span></span></li>
+<li class="row" data-id="B02" data-k="broadcast" data-pos="dir" data-s="2"><div class="rn"><span class="n">Winline Media Poker</span><span class="w">октябрь 2025</span></div><div class="r"><span class="t">Режиссёр эфира</span><span class="en">Live Director</span></div><span class="d">Студийный эфир</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="B03" data-k="broadcast" data-pos="bp" data-s="2"><div class="rn"><span class="n">WINLINE × Шереметьево</span><span class="w">2026, 1 месяц</span></div><div class="r"><span class="t">Продюсер вещания</span><span class="en">Programming Producer</span><span class="rd">Логика и расписание показа</span></div><span class="d">Прямые матчи и повторы с переходом на ролики WINLINE; нашёл продюсера смен</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="B04" data-k="broadcast" data-pos="asst tech" data-s="1"><div class="rn"><span class="n">Стрим Ликса · финал ЛЧ в Invasion</span><span class="w">2026</span></div><div class="r"><span class="t">Ассистент продакшена</span><span class="en">Production Assistant</span><span class="rd">Помощь продакшену</span></div><span class="d">Сборка аппаратной, платформа для камеры, мониторинг звука</span><span class="c"><span class="scope s1">отдельная задача</span></span></li>
+<li class="row" data-id="B05" data-k="broadcast" data-pos="bp cast" data-s="2"><div class="rn"><span class="n">МКИ · Международные киберспортивные игры</span><span class="w">2024, 2025, 2026</span></div><div class="r"><span class="t">Продюсер трансляции + ведущий</span><span class="en">Broadcast Producer / Host</span><span class="rd">Продюсер эфира, ведущий аналитики</span></div><span class="d">Эфир и работа на площадке</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="B06" data-k="broadcast" data-pos="tech" data-s="1"><div class="rn"><span class="n">ФК10 × COLIZEUM · шоу-матч CS2</span><span class="w">июль 2025</span></div><div class="r"><span class="t">Технический специалист эфира</span><span class="en">Broadcast Technician</span><span class="rd">Техника на площадке</span></div><span class="d">Вебки, техника, связь с RuHub</span><span class="c"><span class="scope s1">отдельная задача</span></span></li>
+<li class="row" data-id="B07" data-k="broadcast" data-pos="bp admin" data-s="2"><div class="rn"><span class="n">Everland</span><span class="w">2025-2026</span></div><div class="r"><span class="t">Продюсер трансляции + администратор турнира</span><span class="en">Broadcast Producer / Tournament Admin</span><span class="rd">Трансляции и турниры</span></div><span class="d">Проекты в клубе Everland: продюсирование эфира, администрирование турниров, в одном из проектов конкурс прогнозов</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="B08" data-k="broadcast" data-pos="tm bp" data-s="3"><div class="rn"><span class="n">Silvermont Cup</span><span class="w">август 2026, Everland</span></div><div class="r"><span class="t">Менеджер турнира + продюсер трансляции</span><span class="en">Tournament Manager / Broadcast Producer</span><span class="rd">Турнир и трансляция</span></div><span class="d">Корпоративный турнир Silvermont: проведение, трансляция, пакет графики, логика эфира</span><span class="c"><span class="scope s3">вёл реализацию</span></span></li>
+<li class="row" data-id="B09" data-k="broadcast" data-pos="tm bp" data-s="3"><div class="rn"><span class="n">Яндекс Киберполяна</span><span class="w">ноябрь 2025</span></div><div class="r"><span class="t">Менеджер турнира + продюсер трансляции</span><span class="en">Tournament Manager / Broadcast Producer</span><span class="rd">Турнир и трансляция</span></div><span class="d">Корпоративный турнир: проведение, трансляция, пакет графики, логика эфира</span><span class="c"><span class="scope s3">вёл реализацию</span></span></li>
+<li class="row" data-id="B10" data-k="broadcast" data-pos="bp admin cast" data-s="2"><div class="rn"><span class="n">Playce Tournaments · два проекта</span><span class="w">2025</span></div><div class="r"><span class="t">Продюсер трансляции, администратор, комментатор</span><span class="en">Broadcast Producer / Admin / Caster</span><span class="rd">Продюсер, админ, комментатор</span></div><span class="d">Трансляция и игровые серверы</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="B11" data-k="broadcast" data-pos="bp cast" data-s="2"><div class="rn"><span class="n">Jumbo Esports</span><span class="w">2025, около двух месяцев</span></div><div class="r"><span class="t">Продюсер трансляций + комментатор</span><span class="en">Broadcast Producer / Caster</span><span class="rd">Продюсер трансляций, комментатор</span></div><span class="d">CS2, World of Tanks, Tarkov</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="B12" data-k="broadcast" data-pos="bp cast" data-s="2"><div class="rn"><span class="n">КиберПрайд Champions</span><span class="w">декабрь 2024</span></div><div class="r"><span class="t">Продюсер трансляции + комментатор</span><span class="en">Broadcast Producer / Caster</span><span class="rd">Продюсер трансляции, комментатор</span></div><span class="d">Эфир и комментарий</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="B13" data-k="broadcast" data-pos="tech venue" data-s="2"><div class="rn"><span class="n">Федерация гонок дронов</span><span class="w">апрель 2026</span></div><div class="r"><span class="t">Технический продюсер + координатор площадки</span><span class="en">Technical Producer / Venue Coordinator</span><span class="rd">Техпродакшен и площадка</span></div><span class="d">Технический продакшен трансляции и помощь с вопросами площадки со стороны принимающей стороны</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="C01" data-k="esports" data-pos="cast ref tm" data-s="2"><div class="rn"><span class="n">КиберЛига «Трудовые Резервы»</span><span class="w">5 сезонов</span></div><div class="r"><span class="t">Комментатор, судья, затем продюсер</span><span class="en">Caster, Referee, then Producer</span><span class="rd">Комментарий, судейство, продюсирование</span></div><span class="d">Роли менялись по сезонам. 116 команд в 4-м сезоне, 100 в 5-м; у лиги пять LAN-финалов</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="C02" data-k="esports" data-pos="team" data-s="2"><div class="rn"><span class="n">Игры будущего</span><span class="w">декабрь 2025, Абу-Даби</span></div><div class="r"><span class="t">Сотрудник штаба команды</span><span class="en">Team Staff</span><span class="rd">Штаб состава Travoman, Dota 2</span></div><span class="d">Около 10 дней с командой: TeamSpeak, тренировочные матчи, помощь организаторам по Dota 2</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="C03" data-k="esports" data-pos="tm admin" data-s="3"><div class="rn"><span class="n">LAN по Deadlock</span><span class="w">ноябрь 2024, РТУ МИРЭА</span></div><div class="r"><span class="t">Продюсер турнира + администратор</span><span class="en">Tournament Producer / Admin</span><span class="rd">Продюсер и администратор</span></div><span class="d">LAN со студийным кастом <a href="https://www.mirea.ru/news/kibersportivnyy-tsentr-rtu-mirea-provyel-pervyy-v-mire-lan-turnir-po-deadlock/" target="_blank" rel="noopener">новость РТУ МИРЭА</a></span><span class="c"><span class="scope s3">вёл реализацию</span></span></li>
+<li class="row" data-id="C04" data-k="esports" data-pos="tm ref" data-s="3"><div class="rn"><span class="n">Газпромбанк · корпоративные турниры</span><span class="w">2025, два турнира</span></div><div class="r"><span class="t">Организатор турнира + главный судья</span><span class="en">Tournament Manager / Head Referee</span><span class="rd">Организация, главный судья</span></div><span class="d">По регламенту одного из турниров: онлайн, CS2, Dota 2, Hearthstone Battlegrounds, EA SPORTS FC 25; я указан главным судьёй</span><span class="c"><span class="scope s3">вёл реализацию</span></span></li>
+<li class="row" data-id="C05" data-k="esports" data-pos="pm bp ref" data-s="2"><div class="rn"><span class="n">Уралхим · корпоративный LAN</span><span class="w">август 2026</span></div><div class="r"><span class="t">Менеджер проекта, эфир и судейство</span><span class="en">Project Manager / Broadcast / Referee</span><span class="rd">Договор, эфир, судейство</span></div><span class="d">Договор через РТУ МИРЭА; на площадке трансляция, запуск и судейство матчей</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="C06" data-k="esports" data-pos="pm" data-s="3"><div class="rn"><span class="n">Минэкономразвития · корпоративный турнир</span><span class="w">сентябрь 2026, Вороново</span></div><div class="r"><span class="t">Менеджер проекта мероприятия</span><span class="en">Event Project Manager</span><span class="rd">Реализация турнира</span></div><span class="d">Второй год подряд. Подрядчики, застройка, трансляция, команда проведения и сам турнир; 6 команд CS 3×3</span><span class="c"><span class="scope s3">вёл реализацию</span></span></li>
+<li class="row" data-id="C07" data-k="esports" data-pos="disc ref" data-s="2"><div class="rn"><span class="n">Фестиваль «Победа» · Богатырское сердце</span><span class="w">конец сентября 2026, 4 дня</span></div><div class="r"><span class="t">Менеджер дисциплины CS + судья</span><span class="en">Discipline Manager / Referee</span><span class="rd">CS-направление</span></div><span class="d">Судейство и CS-зона; сверх задачи команда сделала трансляцию с HUD и вебками</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="C08" data-k="esports" data-pos="tm" data-s="2"><div class="rn"><span class="n">Thunder Party × Thunderobot</span><span class="w">май 2025</span></div><div class="r"><span class="t">Продюсер турнирной части</span><span class="en">Tournament Producer</span><span class="rd">Турнирная часть</span></div><span class="d">Шоу-турнир в магазине Thunderobot; среди участников стример Fander и игроки академии Virtus.pro</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="C09" data-k="esports" data-pos="disc" data-s="2"><div class="rn"><span class="n">Фиджитал Игры</span><span class="w">октябрь 2025, Нижний Новгород</span></div><div class="r"><span class="t">Менеджер дисциплины</span><span class="en">Discipline Manager</span></div><span class="d">Ведение дисциплины</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="C10" data-k="esports" data-pos="disc admin" data-s="2"><div class="rn"><span class="n">КиберЗарница</span><span class="w">октябрь 2025, Лужники</span></div><div class="r"><span class="t">Менеджер CS-части + технический администратор</span><span class="en">Discipline Manager / Tech Admin</span><span class="rd">CS-часть, серверы</span></div><span class="d">CS-часть и серверная инфраструктура</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="C11" data-k="esports" data-pos="ref admin" data-s="1"><div class="rn"><span class="n">WINLINE Community Clash</span><span class="w">июнь 2024</span></div><div class="r"><span class="t">Судья, администратор</span><span class="en">Referee / Admin</span><span class="rd">Судья, админ</span></div><span class="d">Лобби, LAN, судейство</span><span class="c"><span class="scope s1">отдельная задача</span></span></li>
+<li class="row" data-id="C12" data-k="esports" data-pos="tm venue" data-s="2"><div class="rn"><span class="n">Atom.Game · LAN-финалы</span><span class="w">декабрь 2024</span></div><div class="r"><span class="t">Менеджер проведения и площадки</span><span class="en">Tournament Operations / Venue</span><span class="rd">Проведение, площадка, аналитика</span></div><span class="d">Документы и проведение, ответственность за площадку, аналитика</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="C13" data-k="esports" data-pos="tm bp" data-s="2"><div class="rn"><span class="n">Algorithm · LAN по League of Legends</span><span class="w">май-июнь 2026, Москва</span></div><div class="r"><span class="t">Менеджер турнира + продюсер трансляции</span><span class="en">Tournament Manager / Broadcast Producer</span><span class="rd">Турнир и трансляция</span></div><span class="d">Организация турнира и эфира</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="C14" data-k="esports" data-pos="admin tech" data-s="1"><div class="rn"><span class="n">Большая киберспортивная лига</span><span class="w">ноябрь 2023</span></div><div class="r"><span class="t">Технический администратор</span><span class="en">Technical Admin</span><span class="rd">Техподдержка</span></div><span class="d">Техническая поддержка и администрирование. Попал в сюжет <a href="https://www.m24.ru/videos/13112023/638894" target="_blank" rel="noopener">«Москвы 24»</a></span><span class="c"><span class="scope s1">отдельная задача</span></span></li>
+<li class="row" data-id="C15" data-k="esports" data-pos="coord" data-s="2"><div class="rn"><span class="n">Headshot Heroes</span><span class="w">сентябрь-октябрь 2024</span></div><div class="r"><span class="t">Координатор проекта</span><span class="en">Project Coordinator</span></div><span class="d">Сбор игроков, координация, немного работы с дизайнером; на площадке общение с заказчиком</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="C16" data-k="esports" data-pos="ref admin" data-s="1"><div class="rn"><span class="n">Volt Summer Cup × Пятёрочка</span><span class="w">август 2024</span></div><div class="r"><span class="t">Судья</span><span class="en">Referee</span></div><span class="d">Судейство, лобби; к приезду компьютеры не были готовы, вместе с командой привели их в рабочее состояние</span><span class="c"><span class="scope s1">отдельная задача</span></span></li>
+<li class="row" data-id="C17" data-k="esports" data-pos="ref" data-s="1"><div class="rn"><span class="n">Турнир РЖД по футболу</span><span class="w">апрель 2025</span></div><div class="r"><span class="t">Секретарь судьи</span><span class="en">Referee Secretary</span></div><span class="d">Судейская поддержка</span><span class="c"><span class="scope s1">отдельная задача</span></span></li>
+<li class="row" data-id="C18" data-k="esports" data-pos="coach" data-s="1"><div class="rn"><span class="n">Киберлагерь в Мордовии</span><span class="w">ноябрь 2024, Саранск</span></div><div class="r"><span class="t">Тренер</span><span class="en">Coach</span></div><span class="d">Тренировал подростков по CS</span><span class="c"><span class="scope s1">отдельная задача</span></span></li>
+<li class="row" data-id="C19" data-k="onsite" data-pos="admin cast" data-s="1"><div class="rn"><span class="n">Point Blank · офлайн-турниры</span></div><div class="r"><span class="t">Администратор турнира + ведущий</span><span class="en">Tournament Admin / Host</span><span class="rd">Администратор, ведущий</span></div><span class="d">Вебки, розыгрыши, объявление победителей</span><span class="c"><span class="scope s1">отдельная задача</span></span></li>
+<li class="row" data-id="C20" data-k="onsite" data-pos="ref asst" data-s="1"><div class="rn"><span class="n">Алабуга Политех</span><span class="w">апрель, Елабуга</span></div><div class="r"><span class="t">Судья + ассистент продакшена</span><span class="en">Referee / Production Assistant</span><span class="rd">Судья, помощь продакшену</span></div><span class="d">Вебки, рассадка участников, помощь людям на площадке</span><span class="c"><span class="scope s1">отдельная задача</span></span></li>
+<li class="row" data-id="C21" data-k="onsite" data-pos="stage" data-s="1"><div class="rn"><span class="n">Профессиональная киберспортивная лига</span></div><div class="r"><span class="t">Координатор сцены</span><span class="en">Stage Manager</span><span class="rd">Live-координация на сцене</span></div><span class="d">Вебки, рассадка, помощь продакшену и судьям; по просьбе руководителя помогал командам быстрее начинать матчи</span><span class="c"><span class="scope s1">отдельная задача</span></span></li>
+<li class="row" data-id="C22" data-k="onsite" data-pos="ref" data-s="2"><div class="rn"><span class="n">Кубок Фиферов 2025</span><span class="w">июнь 2025</span></div><div class="r"><span class="t">Главный судья</span><span class="en">Head Referee</span></div><span class="d">Судейство; в студии помогал с жеребьёвкой и кадрами</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="C23" data-k="esports" data-pos="disc coord" data-s="2"><div class="rn"><span class="n">Кубок России по спортивному программированию · онлайн-отбор</span><span class="w">18-19 апреля 2026</span></div><div class="r"><span class="t">Менеджер дисциплины (подрядчик через ИП)</span><span class="en">Discipline Manager (contractor)</span><span class="rd">Проект через ИП, координация</span></div><span class="d">Дисциплина «программирование систем информационной безопасности». Собрал команду, связывал её с организатором, во время этапа отвечал участникам, заказчику и ФСП, решал вопросы трансляции</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="C24" data-k="esports" data-pos="disc" data-s="2"><div class="rn"><span class="n">Фиджитал-соревнование школьников</span><span class="w">РТУ МИРЭА</span></div><div class="r"><span class="t">Координатор VR-части</span><span class="en">VR Segment Coordinator</span><span class="rd">Проведение VR-части</span></div><span class="d">Соревнование по гранту университетской команды; я проводил фиджитал-часть VR + Valorant на площадке</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="D01-03" data-k="media" data-pos="cast" data-s="1"><div class="rn"><span class="n">Winstrike Masters · BETERA Vibe City · European Pro League</span><span class="w">2024-2025</span></div><div class="r"><span class="t">Комментатор</span><span class="en">Caster</span><span class="rd">Комментатор CS2</span></div><span class="d">Комментировал матчи на этих и других турнирах</span><span class="c"><span class="scope s1">отдельная задача</span></span></li>
+<li class="row" data-id="D04" data-k="media" data-pos="cast" data-s="1"><div class="rn"><span class="n">LDPR eSports · онлайн</span></div><div class="r"><span class="t">Комментатор</span><span class="en">Caster</span></div><span class="d">Комментировал матчи в студии</span><span class="c"><span class="scope s1">отдельная задача</span></span></li>
+<li class="row" data-id="D05" data-k="onsite" data-pos="venue" data-s="2"><div class="rn"><span class="n">LDPR eSports · офлайн</span><span class="w">РТУ МИРЭА</span></div><div class="r"><span class="t">Координатор площадки (принимающая сторона)</span><span class="en">Venue Coordinator (host side)</span><span class="rd">Площадка и застройка</span></div><span class="d">Переговоры о площадке с молодёжным крылом ЛДПР и ректором; со стороны университета вёл застройку для OneShot и ЛДПР</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="D06" data-k="media" data-pos="cast" data-s="1"><div class="rn"><span class="n">ВАУ-Фест</span><span class="w">май 2025</span></div><div class="r"><span class="t">Ведущий</span><span class="en">Host</span></div><span class="d">Вёл программу на сцене</span><span class="c"><span class="scope s1">отдельная задача</span></span></li>
+<li class="row" data-id="D07" data-k="media" data-pos="bp cast" data-s="3"><div class="rn"><span class="n">Шоу-матчи с ректором РТУ МИРЭА</span><span class="w">2023-2026</span></div><div class="r"><span class="t">Продюсер + комментатор</span><span class="en">Producer / Caster</span><span class="rd">Продюсер, комментатор</span></div><span class="d">Продюсировал и комментировал шоу-матчи</span><span class="c"><span class="scope s3">вёл реализацию</span></span></li>
+<li class="row" data-id="D08" data-k="media" data-pos="vj" data-s="1"><div class="rn"><span class="n">ГКЧП × WINLINE</span></div><div class="r"><span class="t">VJ</span><span class="en">Visual Jockey</span></div><span class="d">Экраны в кадре</span><span class="c"><span class="scope s1">отдельная задача</span></span></li>
+<li class="row" data-id="D09" data-k="media" data-pos="content" data-s="1"><div class="rn"><span class="n">BetBoom МедиаКлассико</span></div><div class="r"><span class="t">Редактор контента</span><span class="en">Content Editor</span></div><span class="d">Клипы с Twitch, фото, материалы для постов</span><span class="c"><span class="scope s1">отдельная задача</span></span></li>
+<li class="row" data-id="D10" data-k="media" data-pos="asst" data-s="1"><div class="rn"><span class="n">«Чудо Полес» · SASAVOT × WINLINE</span><span class="w">август 2025</span></div><div class="r"><span class="t">Ассистент эфира (live-скоринг)</span><span class="en">Live Scoring Operator</span><span class="rd">Live-скоринг</span></div><span class="d">Считал баллы участников в прямом эфире</span><span class="c"><span class="scope s1">отдельная задача</span></span></li>
+<li class="row" data-id="D11" data-k="media" data-pos="content" data-s="1"><div class="rn"><span class="n">Кубок России и Первенство Москвы</span><span class="w">ноябрь 2025</span></div><div class="r"><span class="t">Интервьюер</span><span class="en">Interviewer</span></div><span class="d">Интервью на площадке и сбор контента</span><span class="c"><span class="scope s1">отдельная задача</span></span></li>
+<li class="row" data-id="D12" data-k="media" data-pos="talent" data-s="2"><div class="rn"><span class="n">Wguys</span><span class="w">январь 2025</span></div><div class="r"><span class="t">Координатор талантов</span><span class="en">Talent Coordinator</span><span class="rd">Координатор стримеров</span></div><span class="d">Тайминги, связь организаторов и судей со стримерами</span><span class="c"><span class="scope s2">отвечал за часть</span></span></li>
+<li class="row" data-id="D13" data-k="media" data-pos="asst" data-s="1"><div class="rn"><span class="n">Медийная футбольная лига</span></div><div class="r"><span class="t">Ассистент продюсера</span><span class="en">Production Assistant</span><span class="rd">Помощник продюсера</span></div><span class="d">Чат, координация, справки для стрима</span><span class="c"><span class="scope s1">отдельная задача</span></span></li>
+<li class="row" data-id="D14" data-k="media" data-pos="vj" data-s="1"><div class="rn"><span class="n">«Спортивные зашквары» · студия «Площадка»</span></div><div class="r"><span class="t">VJ</span><span class="en">Visual Jockey</span></div><span class="d">Визуальное сопровождение</span><span class="c"><span class="scope s1">отдельная задача</span></span></li>
+<li class="row" data-id="D15" data-k="media" data-pos="vj" data-s="1"><div class="rn"><span class="n">«Биографии» · студия «Площадка»</span></div><div class="r"><span class="t">VJ</span><span class="en">Visual Jockey</span></div><span class="d">Визуальное сопровождение</span><span class="c"><span class="scope s1">отдельная задача</span></span></li>
+      </ul>
+    </details>
+  </div></section>
+
+  <section id="contact"><div class="wrap contact">
+    <div>
+      <h2>Давайте работать вместе</h2>
+      <p style="margin-top:18px">Если ищете продюсера в команду, напишите, какая позиция и какие проекты. Расскажу подробнее о том, что ближе к вашей работе.</p>
+      <p>Если нужен человек на конкретный проект, пришлите дату, площадку и задачу. Отвечу, какую часть возьму на себя и сколько людей понадобится.</p>
+    </div>
+    <ul class="links">
+      <li><span class="label">Telegram</span><a href="https://t.me/solution_n" target="_blank" rel="noopener">@solution_n</a></li>
+      <li><span class="label">Телефон</span><a href="tel:+79057057667">+7 905 705-76-67</a></li>
+    </ul>
+  </div></section>
+</main>
+
+<footer><div class="wrap">Никита Гольцев · Москва</div></footer>
+
+<script>
+(function(){
+  var bar=document.getElementById("bar"), root=document.documentElement;
+  function setH(){var sticky=getComputedStyle(bar).position==="sticky";root.style.setProperty("--hh",(sticky?bar.offsetHeight:0)+"px");}
+  setH();
+  if("ResizeObserver" in window){new ResizeObserver(setH).observe(bar);} else {window.addEventListener("resize",setH);}
+
+  var det=document.getElementById("all-details"),
+      rows=[].slice.call(document.querySelectorAll("#rows .row")),
+      chips=[].slice.call(document.querySelectorAll(".chip")),
+      q=document.getElementById("q"), found=document.getElementById("found"),
+      picked=document.getElementById("picked"), pickedT=document.getElementById("picked-t"),
+      active="all", pos="", scope="";
+  var SCOPE={"3":"вёл реализацию","2":"отвечал за часть","1":"отдельная задача"};
+
+  // "ё" and "е" count as the same letter: most people type "режиссер"
+  function norm(s){return s.toLowerCase().replace(/ё/g,"е");}
+  function word(n){var m=n%10,h=n%100; if(m===1&&h!==11)return "строка"; if(m>=2&&m<=4&&(h<12||h>14))return "строки"; return "строк";}
+  function hasPos(r,k){return (" "+r.getAttribute("data-pos")+" ").indexOf(" "+k+" ")>-1;}
+
+  document.getElementById("total").textContent=rows.length;
+  chips.forEach(function(b){
+    var k=b.getAttribute("data-k");
+    var n=k==="all"?rows.length:rows.filter(function(r){return r.getAttribute("data-k")===k;}).length;
+    b.querySelector(".cnt").textContent=n;
+  });
+  [].forEach.call(document.querySelectorAll("[data-count]"),function(el){
+    var k=el.getAttribute("data-count");
+    el.textContent=rows.filter(function(r){return hasPos(r,k);}).length;
+  });
+  [].forEach.call(document.querySelectorAll("[data-scount]"),function(el){
+    var k=el.getAttribute("data-scount");
+    el.textContent="("+rows.filter(function(r){return r.getAttribute("data-s")===k;}).length+")";
+  });
+
+  function apply(){
+    var t=norm(q.value.trim()), n=0;
+    rows.forEach(function(r){
+      var ok=(active==="all"||r.getAttribute("data-k")===active)
+        &&(!pos||hasPos(r,pos))
+        &&(!scope||r.getAttribute("data-s")===scope)
+        &&(!t||norm(r.textContent).indexOf(t)>-1);
+      r.hidden=!ok; if(ok)n++;
+    });
+    var label=pos?"Должность: "+document.querySelector('.role[data-pos="'+pos+'"] .rt').textContent:scope?"Масштаб: "+SCOPE[scope]:"";
+    picked.hidden=!label; pickedT.textContent=label;
+    found.textContent = n ? "Показано: "+n+" "+word(n) : "Ничего не нашлось. Попробуйте бренд или роль, например «судья».";
+  }
+  chips.forEach(function(b){b.addEventListener("click",function(){
+    active=b.getAttribute("data-k");
+    chips.forEach(function(c){c.setAttribute("aria-pressed",c===b?"true":"false");});
+    apply();
+  });});
+  q.addEventListener("input",apply);
+  document.getElementById("picked-x").addEventListener("click",function(){pos="";scope="";apply();});
+
+  function openAll(focus){
+    det.open=true;
+    if(focus){ var s=det.querySelector("summary"); s.focus({preventScroll:true}); }
+  }
+  function showFiltered(){
+    active="all"; q.value="";
+    chips.forEach(function(c){c.setAttribute("aria-pressed",c.getAttribute("data-k")==="all"?"true":"false");});
+    apply(); openAll(true);
+    document.getElementById("all").scrollIntoView();
+  }
+  [].forEach.call(document.querySelectorAll(".role"),function(b){b.addEventListener("click",function(){
+    pos=b.getAttribute("data-pos"); scope=""; showFiltered();
+  });});
+  [].forEach.call(document.querySelectorAll(".pick"),function(b){b.addEventListener("click",function(){
+    scope=b.getAttribute("data-s"); pos=""; showFiltered();
+  });});
+
+  apply();
+  if(location.hash==="#all")openAll(false);
+  window.addEventListener("hashchange",function(){ if(location.hash==="#all")openAll(true); });
+  [].forEach.call(document.querySelectorAll('a[href="#all"]'),function(a){a.addEventListener("click",function(){openAll(true);});});
+})();
+</script>
+</body>
+</html>
